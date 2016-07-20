@@ -13,19 +13,20 @@
                     <SolidColorBrush Color="#FF5A6DC2"/>
                 </Button.Background>
             </Button>
-            <Border CornerRadius="25" Background="#FFB8C6FE" BorderBrush="white" BorderThickness="15" >
-                <Image x:Name="logo" Source="Images/ST.png" HorizontalAlignment="Left" Height="110" Margin="40.667,25.667,0,0" VerticalAlignment="Top" Width="110"/>
+            <Border CornerRadius="25" Background="#FFB8C6FE" BorderBrush="white" BorderThickness="5" >
+                <TextBox x:Name="tweetBox" Height="87" Margin="32.667,132.667,35.333,0" TextWrapping="Wrap" Text="Enter Tweet" VerticalAlignment="Top" GotFocus="tweetBox_GotFocus"/>
             </Border>
-            <Image x:Name="settings" Source ="Images/Settings.png" HorizontalAlignment="Left" Height="110" Margin="182,38,0,0" VerticalAlignment="Top" Width="110"/>
-            <Button x:Name="PickFile" Content="Choose Video" HorizontalAlignment="Left" Opacity="1" Foreground="White" Margin="68,174,0,0" VerticalAlignment="Top" Height="110" Width="224" Click="FilePicker_Click" Background="#FF5A6DC2" FontSize="25">
+            <Image x:Name="settings" Source ="Images/Settings.png" HorizontalAlignment="Left" Height="110" Margin="241,10,0,0" VerticalAlignment="Top" Width="119"/>
+            <Button x:Name="PickFile" Content="Choose Video" HorizontalAlignment="Left" Opacity="1" Foreground="White" Margin="68,253,0,0" VerticalAlignment="Top" Height="75" Width="224" Click="FilePicker_Click" Background="#FF5A6DC2" FontSize="25">
             </Button>
-            <Button x:Name="TweetFile" Content="Tweet Video" HorizontalAlignment="Left" Foreground="White" Margin="68,320,0,0" VerticalAlignment="Top" Height="110" Width="224" Click="SendFile_Click" Background="#FF5A6DC2" FontSize="25">
+            <Button x:Name="TweetFile" Content="Tweet Video" HorizontalAlignment="Left" Foreground="White" Margin="68,352,0,0" VerticalAlignment="Top" Height="75" Width="224" Click="SendFile_Click" Background="#FF5A6DC2" FontSize="25">
             </Button>
             <TextBlock x:Name="OutputTextBlock" FontSize="10" TextAlignment="Center" HorizontalAlignment="Left" Margin="68,445,0,0" TextWrapping="Wrap" Text="No File Selected" VerticalAlignment="Top" Height="49" Width="224" Foreground="#FFC02B2B"/>
             <Border x:Name="playPauseBorder" BorderBrush="#7F000000" Width="200" Height="100" Margin="62.667,420.667,67.333,0" VerticalAlignment="Center" CornerRadius="5" Background="Black" Tapped="playPauseBorder_Tapped">
             </Border>
             <MediaElement x:Name="mediaElement" Visibility="Visible" AutoPlay="false" HorizontalAlignment="Left" Height="100" Margin="78,480,0,0" VerticalAlignment="Top" Width="200" Tapped="mediaElement_Tapped_1"/>
             <TextBlock x:Name="playPause" TextAlignment="Center" Text="No file selected" Width="200" HorizontalAlignment="Center" Height="100" Margin="78,484,82,-4" VerticalAlignment="Center" Opacity="0.995" Foreground="White" Tapped="playPause_Tapped"/>
+            <Image x:Name="image" HorizontalAlignment="Left" Height="108" Margin="9,12,0,0" VerticalAlignment="Top" Width="112" Source="/Images/ST.png"/>
         </Grid>
     </Viewbox>
 </Page>

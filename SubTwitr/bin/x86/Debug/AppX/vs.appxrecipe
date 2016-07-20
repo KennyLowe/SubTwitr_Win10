@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\git\SubTwitr\SubTwitr\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-07-20T11:44:43.641</Modified>
+      <Modified>2016-07-20T12:42:34.170</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\bin\x86\Debug\SubTwitr.exe">
       <PackagePath>entrypoint\SubTwitr.exe</PackagePath>
-      <Modified>2016-07-20T11:44:39.187</Modified>
+      <Modified>2016-07-20T12:42:33.173</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kenny\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -719,7 +719,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\bin\x86\Debug\SubTwitr.xr.xml">
       <PackagePath>SubTwitr.xr.xml</PackagePath>
-      <Modified>2016-07-20T11:44:37.980</Modified>
+      <Modified>2016-07-20T12:42:32.955</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -727,11 +727,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-07-20T11:44:42.383</Modified>
+      <Modified>2016-07-20T12:42:33.897</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\bin\x86\Debug\Core\SubTwitr.exe">
       <PackagePath>SubTwitr.exe</PackagePath>
-      <Modified>2016-07-20T11:44:43.597</Modified>
+      <Modified>2016-07-20T12:42:34.158</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

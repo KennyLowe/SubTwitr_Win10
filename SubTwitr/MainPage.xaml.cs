@@ -72,16 +72,16 @@ namespace SubTwitr
                 CloudFileClient fileClient = storageAccount.CreateCloudFileClient();
                 CloudFileShare share = fileClient.GetShareReference("subtwitr");
                 Guid g = Guid.NewGuid();
+
+                // Create folder name based on GUID
                 CloudFileDirectory dir = share.GetRootDirectoryReference();
-
                 CloudFileDirectory fileDirectory = null;
-
                 fileDirectory = dir.GetDirectoryReference(g.ToString());
-
                 await fileDirectory.CreateIfNotExistsAsync();
 
-                CloudFile destFile = dir.GetFileReference(file.Name);
-               // destFile.UploadFromFileAsync(file);
+                //Upload video file
+                CloudFile destFile = dir.GetFileReference(g.ToString() + @"\" + g.ToString() + ".mp4");
+                await destFile.UploadFromFileAsync(file);
             }
         }
 
@@ -145,6 +145,14 @@ namespace SubTwitr
                 mediaElement.Play();
                 playPauseBorder.Visibility = Visibility.Collapsed;
                 playPause.Visibility = Visibility.Collapsed;
+            }
+        }
+
+        private void tweetBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            if (tweetBox.Text == "Enter Tweet")
+            {
+                tweetBox.Text = "";
             }
         }
     }
