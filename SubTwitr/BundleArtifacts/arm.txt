@@ -1,0 +1,6 @@
+MainPackage=C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\bin\ARM\Debug\SubTwitr_1.0.13.0_ARM_Debug.appx
+SymbolPackage=C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\AppPackages\SubTwitr_1.0.13.0_Debug_Test\SubTwitr_1.0.13.0_ARM_Debug.appxsym
+ResourcePack=C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\bin\ARM\Debug\SubTwitr_1.0.13.0_scale-100.appx
+ResourcePack=C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\bin\ARM\Debug\SubTwitr_1.0.13.0_scale-125.appx
+ResourcePack=C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\bin\ARM\Debug\SubTwitr_1.0.13.0_scale-150.appx
+ResourcePack=C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\bin\ARM\Debug\SubTwitr_1.0.13.0_scale-400.appx

@@ -1,0 +1,9 @@
+﻿[ResourceMetadata]
+"ResourceId"			"filemap.language-es"
+"ResourceDimensions"		"language-es"
+
+[Files]
+"C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\obj\ARM\Debug\filemap.language-es.pri"			"resources.pri"
+"C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\obj\ARM\Debug\PackageLayout\es\System.Spatial.resources.dll"			"es\System.Spatial.resources.dll"
+"C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\obj\ARM\Debug\PackageLayout\es\Microsoft.Data.OData.resources.dll"			"es\Microsoft.Data.OData.resources.dll"
+"C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\obj\ARM\Debug\PackageLayout\es\Microsoft.Data.Edm.resources.dll"			"es\Microsoft.Data.Edm.resources.dll"
