@@ -14,7 +14,7 @@
                 </Button.Background>
             </Button>
             <Border CornerRadius="25" Background="#FFB8C6FE" BorderBrush="white" BorderThickness="5" >
-                <TextBox x:Name="tweetBox" Height="87" Margin="32.667,132.667,35.333,0" TextWrapping="Wrap" Text="Enter Tweet" VerticalAlignment="Top" GotFocus="tweetBox_GotFocus"/>
+                <TextBox x:Name="tweetBox" MaxLength="140" Height="104" Margin="32.667,126.667,35.333,0" TextWrapping="Wrap" Text="Enter Tweet" VerticalAlignment="Top" GotFocus="tweetBox_GotFocus"/>
             </Border>
             <Image x:Name="settings" Source ="Images/Settings.png" HorizontalAlignment="Left" Height="110" Margin="241,10,0,0" VerticalAlignment="Top" Width="119"/>
             <Button x:Name="PickFile" Content="Choose Video" HorizontalAlignment="Left" Opacity="1" Foreground="White" Margin="68,253,0,0" VerticalAlignment="Top" Height="75" Width="224" Click="FilePicker_Click" Background="#FF5A6DC2" FontSize="25">

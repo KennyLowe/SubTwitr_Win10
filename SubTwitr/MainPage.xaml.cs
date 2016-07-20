@@ -82,6 +82,13 @@ namespace SubTwitr
                 //Upload video file
                 CloudFile destFile = dir.GetFileReference(g.ToString() + @"\" + g.ToString() + ".mp4");
                 await destFile.UploadFromFileAsync(file);
+
+                //Upload Tweet
+                if ((tweetBox.Text != null) && (tweetBox.Text != "Enter Tweet"))
+                {
+                    CloudFile tweetFile = dir.GetFileReference(g.ToString() + @"\" + g.ToString() + ".tweet");
+                    await tweetFile.UploadTextAsync(tweetBox.Text);
+                }
             }
         }
 
