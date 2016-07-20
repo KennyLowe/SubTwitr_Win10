@@ -10,31 +10,31 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>cbc508ac-39af-41f0-8ad0-1405c5ffb205</PackageIdentityName>
     <PackageIdentityPublisher>CN=kenny</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\git\SubTwitr\SubTwitr\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>0DA494039AA13B4492AB6A0765E4E3FD8DAC150C705F87E2A40B3271373662FE</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>cbc508ac-39af-41f0-8ad0-1405c5ffb205_1.0.10.0_x86__nf1t380qfcv3p</RegisteredPackageMoniker>
+    <RegisteredManifestChecksum>A64336B681A20397B0DE64A30B380A08DD5C1627FEF58CCFAEC0B7E061661375</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>cbc508ac-39af-41f0-8ad0-1405c5ffb205_1.0.13.0_x86__nf1t380qfcv3p</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>cbc508ac-39af-41f0-8ad0-1405c5ffb205_nf1t380qfcv3p!App</RegisteredUserModeAppID>
     <RegisteredPackageID>cbc508ac-39af-41f0-8ad0-1405c5ffb205</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=kenny</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.10.0</RegisteredVersion>
+    <RegisteredVersion>1.0.13.0</RegisteredVersion>
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\git\SubTwitr\SubTwitr\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-07-19T16:46:18.999</Modified>
+      <Modified>2016-07-20T11:44:43.641</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\bin\x86\Debug\SubTwitr.exe">
+    <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\bin\x86\Debug\SubTwitr.exe">
       <PackagePath>entrypoint\SubTwitr.exe</PackagePath>
-      <Modified>2016-07-19T16:46:16.848</Modified>
+      <Modified>2016-07-20T11:44:39.187</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kenny\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -576,117 +576,162 @@
       <PackagePath>Microsoft.WindowsAzure.Storage.dll</PackagePath>
       <Modified>2016-07-01T12:59:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\Assets\BadgeLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Assets\BadgeLogo.scale-100.png">
       <PackagePath>Assets\BadgeLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-07-18T16:45:42.902</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\Assets\BadgeLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Assets\BadgeLogo.scale-125.png">
       <PackagePath>Assets\BadgeLogo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-07-18T16:45:08.960</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\Assets\BadgeLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Assets\BadgeLogo.scale-150.png">
       <PackagePath>Assets\BadgeLogo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-07-18T16:44:58.487</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\Assets\BadgeLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Assets\BadgeLogo.scale-200.png">
       <PackagePath>Assets\BadgeLogo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-07-18T16:44:43.357</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\Assets\BadgeLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Assets\BadgeLogo.scale-400.png">
       <PackagePath>Assets\BadgeLogo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-07-18T16:44:25.539</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-07-18T16:42:51.478</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\Assets\SplashScreen.scale-125.png">
+    <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Assets\SplashScreen.scale-125.png">
       <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-07-18T16:42:28.598</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\Assets\SplashScreen.scale-150.png">
+    <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Assets\SplashScreen.scale-150.png">
       <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-07-18T16:42:06.296</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\Assets\SplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Assets\SplashScreen.scale-400.png">
       <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-07-18T16:41:09.553</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\Assets\Square44x44Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Assets\Square150x150Logo.scale-100.png">
+      <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-19T16:53:27.579</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Assets\Square150x150Logo.scale-125.png">
+      <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-19T16:53:48.994</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Assets\Square150x150Logo.scale-150.png">
+      <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-19T16:53:40.018</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Assets\Square150x150Logo.scale-400.png">
+      <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-19T16:53:06.305</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Assets\Square44x44Logo.scale-400.png">
       <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-07-18T16:46:51.548</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\Images\Settings.png">
+    <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Assets\Square71x71Logo.scale-100.png">
+      <PackagePath>Assets\Square71x71Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-19T16:50:32.217</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Assets\Square71x71Logo.scale-125.png">
+      <PackagePath>Assets\Square71x71Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-19T16:52:24.353</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Assets\Square71x71Logo.scale-150.png">
+      <PackagePath>Assets\Square71x71Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-19T16:50:46.431</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Assets\Square71x71Logo.scale-200.png">
+      <PackagePath>Assets\Square71x71Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-19T16:49:54.551</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Assets\Square71x71Logo.scale-400.png">
+      <PackagePath>Assets\Square71x71Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-19T16:49:42.720</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Images\Settings.png">
       <PackagePath>Images\Settings.png</PackagePath>
       <Modified>2016-07-18T10:53:01.788</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\Images\ST.png">
+    <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Images\ST.png">
       <PackagePath>Images\ST.png</PackagePath>
       <Modified>2016-07-18T10:40:58.078</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2015-09-20T16:20:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-07-18T16:41:34.698</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-09-20T16:20:42.000</Modified>
+      <Modified>2016-07-19T16:53:18.190</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-07-18T16:47:00.531</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T16:20:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T16:20:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-09-20T16:20:42.000</Modified>
+      <Modified>2016-07-19T17:17:23.094</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2016-07-15T22:36:54.403</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\bin\x86\Debug\SubTwitr.xr.xml">
+    <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\bin\x86\Debug\SubTwitr.xr.xml">
       <PackagePath>SubTwitr.xr.xml</PackagePath>
-      <Modified>2016-07-19T16:46:16.479</Modified>
+      <Modified>2016-07-20T11:44:37.980</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2016-07-18T16:05:20.937</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-07-19T16:46:18.494</Modified>
+      <Modified>2016-07-20T11:44:42.383</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\bin\x86\Debug\Core\SubTwitr.exe">
+    <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\bin\x86\Debug\Core\SubTwitr.exe">
       <PackagePath>SubTwitr.exe</PackagePath>
-      <Modified>2016-07-19T16:46:18.983</Modified>
+      <Modified>2016-07-20T11:44:43.597</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

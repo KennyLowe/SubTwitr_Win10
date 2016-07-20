@@ -64,16 +64,24 @@ namespace SubTwitr
         }
 
 
-        private void SendFile_Click(object sender, RoutedEventArgs e)
+        private async void SendFile_Click(object sender, RoutedEventArgs e)
         {
             if (file != null)
             {
                 CloudStorageAccount storageAccount = CloudStorageAccount.Parse("DefaultEndpointsProtocol=https;AccountName=subtwitr;AccountKey=y2FHEejelfEDF8w38kdYWSdpgBcJ39DsHU2fkjFbJT80fUPS8CYvg73QIUpO5pJYQZs8QImkQdN2s91cWvawzA==");
                 CloudFileClient fileClient = storageAccount.CreateCloudFileClient();
                 CloudFileShare share = fileClient.GetShareReference("subtwitr");
+                Guid g = Guid.NewGuid();
                 CloudFileDirectory dir = share.GetRootDirectoryReference();
+
+                CloudFileDirectory fileDirectory = null;
+
+                fileDirectory = dir.GetDirectoryReference(g.ToString());
+
+                await fileDirectory.CreateIfNotExistsAsync();
+
                 CloudFile destFile = dir.GetFileReference(file.Name);
-                destFile.UploadFromFileAsync(file);
+               // destFile.UploadFromFileAsync(file);
             }
         }
 

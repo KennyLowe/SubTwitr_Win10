@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="cbc508ac-39af-41f0-8ad0-1405c5ffb205" Publisher="CN=kenny" Version="1.0.10.0" ProcessorArchitecture="x86" />
+  <Identity Name="cbc508ac-39af-41f0-8ad0-1405c5ffb205" Publisher="CN=kenny" Version="1.0.13.0" ProcessorArchitecture="x86" />
   <mp:PhoneIdentity PhoneProductId="cbc508ac-39af-41f0-8ad0-1405c5ffb205" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>SubTwitr</DisplayName>
@@ -26,7 +26,7 @@
     <Application Id="App" Executable="SubTwitr.exe" EntryPoint="SubTwitr.App">
       <uap:VisualElements DisplayName="SubTwitr" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="SubTwitr" BackgroundColor="transparent">
         <uap:LockScreen Notification="badgeAndTileText" BadgeLogo="Assets\BadgeLogo.png" />
-        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square71x71Logo="Assets\Square71x71Logo.png">
           <uap:ShowNameOnTiles>
             <uap:ShowOn Tile="square150x150Logo" />
             <uap:ShowOn Tile="wide310x150Logo" />
@@ -47,7 +47,7 @@
     <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v5.0" />
     <build:Item Name="VisualStudio" Version="14.0" />
     <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Community 2015" />
-    <build:Item Name="OperatingSystem" Version="10.0.14390.0 (rs1_release.160712-1452)" />
+    <build:Item Name="OperatingSystem" Version="10.0.14393.0 (rs1_release.160715-1616)" />
     <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="14.0.25420.1" />
     <build:Item Name="ProjectGUID" Value="{1BD07A23-8E08-4FD6-8A69-538624B38130}" />
     <build:Item Name="OptimizingToolset" Value="None" />
