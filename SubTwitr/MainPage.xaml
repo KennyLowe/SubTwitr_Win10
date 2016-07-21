@@ -16,7 +16,7 @@
             <Border CornerRadius="25" Background="#FFB8C6FE" BorderBrush="white" BorderThickness="5" >
                 <TextBox x:Name="tweetBox" MaxLength="140" Height="104" Margin="32.667,126.667,35.333,0" TextWrapping="Wrap" Text="Enter Tweet" VerticalAlignment="Top" GotFocus="tweetBox_GotFocus"/>
             </Border>
-            <Image x:Name="settings" Source ="Images/Settings.png" HorizontalAlignment="Left" Height="110" Margin="241,10,0,0" VerticalAlignment="Top" Width="119"/>
+            <Image x:Name="settings" Source ="Images/Settings.png" HorizontalAlignment="Left" Height="110" Margin="241,10,0,0" VerticalAlignment="Top" Width="119" Tapped="settings_Tapped"/>
             <Button x:Name="PickFile" Content="Choose Video" HorizontalAlignment="Left" Opacity="1" Foreground="White" Margin="68,253,0,0" VerticalAlignment="Top" Height="75" Width="224" Click="FilePicker_Click" Background="#FF5A6DC2" FontSize="25">
             </Button>
             <Button x:Name="TweetFile" Content="Tweet Video" HorizontalAlignment="Left" Foreground="White" Margin="68,352,0,0" VerticalAlignment="Top" Height="75" Width="224" Click="SendFile_Click" Background="#FF5A6DC2" FontSize="25">
@@ -27,6 +27,8 @@
             <MediaElement x:Name="mediaElement" Visibility="Visible" AutoPlay="false" HorizontalAlignment="Left" Height="100" Margin="78,480,0,0" VerticalAlignment="Top" Width="200" Tapped="mediaElement_Tapped_1"/>
             <TextBlock x:Name="playPause" TextAlignment="Center" Text="No file selected" Width="200" HorizontalAlignment="Center" Height="100" Margin="78,484,82,-4" VerticalAlignment="Center" Opacity="0.995" Foreground="White" Tapped="playPause_Tapped"/>
             <Image x:Name="image" HorizontalAlignment="Left" Height="108" Margin="9,12,0,0" VerticalAlignment="Top" Width="112" Source="/Images/ST.png"/>
+            <TextBlock x:Name="userName" HorizontalAlignment="Center" Height="29" Margin="150,104,119,0" TextWrapping="Wrap" Text="No User" VerticalAlignment="Top" Width="91"/>
+            <Image x:Name="profilePic" HorizontalAlignment="Left" Height="81" Margin="140,18,0,0" VerticalAlignment="Top" Width="82"/>
         </Grid>
     </Viewbox>
 </Page>

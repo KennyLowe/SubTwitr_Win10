@@ -1,4 +1,3 @@
-WinMetadata\Windows.winmd
 Assets\BadgeLogo.scale-100.png
 Assets\BadgeLogo.scale-125.png
 Assets\BadgeLogo.scale-150.png
@@ -29,3 +28,4 @@ SubTwitr.xr.xml
 Images\Settings.png
 Images\ST.png
 Properties\Default.rd.xml
+WinMetadata\Windows.winmd

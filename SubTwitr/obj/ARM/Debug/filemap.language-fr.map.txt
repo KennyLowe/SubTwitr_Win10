@@ -3,7 +3,7 @@
 "ResourceDimensions"		"language-fr"
 
 [Files]
-"C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\obj\ARM\Debug\filemap.language-fr.pri"			"resources.pri"
-"C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\obj\ARM\Debug\PackageLayout\fr\System.Spatial.resources.dll"			"fr\System.Spatial.resources.dll"
-"C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\obj\ARM\Debug\PackageLayout\fr\Microsoft.Data.OData.resources.dll"			"fr\Microsoft.Data.OData.resources.dll"
-"C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\obj\ARM\Debug\PackageLayout\fr\Microsoft.Data.Edm.resources.dll"			"fr\Microsoft.Data.Edm.resources.dll"
+"C:\git\SubTwitr\SubTwitr\obj\ARM\Debug\filemap.language-fr.pri"			"resources.pri"
+"C:\git\SubTwitr\SubTwitr\obj\ARM\Debug\PackageLayout\fr\System.Spatial.resources.dll"			"fr\System.Spatial.resources.dll"
+"C:\git\SubTwitr\SubTwitr\obj\ARM\Debug\PackageLayout\fr\Microsoft.Data.OData.resources.dll"			"fr\Microsoft.Data.OData.resources.dll"
+"C:\git\SubTwitr\SubTwitr\obj\ARM\Debug\PackageLayout\fr\Microsoft.Data.Edm.resources.dll"			"fr\Microsoft.Data.Edm.resources.dll"

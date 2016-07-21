@@ -1,5 +1,7 @@
 ﻿{
   "dependencies": {
+    "Auth0.Windows.UWP": "1.0.2",
+    "linqtotwitter": "4.1.0",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
     "WindowsAzure.Storage": "7.1.2"
   },

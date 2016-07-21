@@ -3,7 +3,7 @@
 "ResourceDimensions"		"language-zh-hant"
 
 [Files]
-"C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\obj\ARM\Debug\filemap.language-zh-hant.pri"			"resources.pri"
-"C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\obj\ARM\Debug\PackageLayout\zh-Hant\System.Spatial.resources.dll"			"zh-Hant\System.Spatial.resources.dll"
-"C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\obj\ARM\Debug\PackageLayout\zh-Hant\Microsoft.Data.OData.resources.dll"			"zh-Hant\Microsoft.Data.OData.resources.dll"
-"C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\obj\ARM\Debug\PackageLayout\zh-Hant\Microsoft.Data.Edm.resources.dll"			"zh-Hant\Microsoft.Data.Edm.resources.dll"
+"C:\git\SubTwitr\SubTwitr\obj\ARM\Debug\filemap.language-zh-hant.pri"			"resources.pri"
+"C:\git\SubTwitr\SubTwitr\obj\ARM\Debug\PackageLayout\zh-Hant\System.Spatial.resources.dll"			"zh-Hant\System.Spatial.resources.dll"
+"C:\git\SubTwitr\SubTwitr\obj\ARM\Debug\PackageLayout\zh-Hant\Microsoft.Data.OData.resources.dll"			"zh-Hant\Microsoft.Data.OData.resources.dll"
+"C:\git\SubTwitr\SubTwitr\obj\ARM\Debug\PackageLayout\zh-Hant\Microsoft.Data.Edm.resources.dll"			"zh-Hant\Microsoft.Data.Edm.resources.dll"

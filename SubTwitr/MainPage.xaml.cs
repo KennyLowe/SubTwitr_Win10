@@ -3,21 +3,24 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
+using Windows.Foundation;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using Microsoft.WindowsAzure.Storage; 
+using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Blob;
 using Microsoft.WindowsAzure.Storage.File;
 using Windows.Storage.Pickers;
 using Windows.Storage;
 using System.Windows;
+using LinqToTwitter;
+using Windows.UI.Popups;
+using Auth0.LoginClient;
+using System.Threading.Tasks;
 
 namespace SubTwitr
 {
@@ -26,10 +29,75 @@ namespace SubTwitr
     {
         public StorageFile file;
         public FileInfo fileInfo;
+        TwitterContext ctx;
+
         public MainPage()
         {
 
             this.InitializeComponent();
+
+            Task<string> contents = ReadTextFile("secrets.txt");
+
+            if (contents.Result == null)
+            {
+                storeTwitterAuthCreds();
+            }
+            else
+            {
+                twitterLogin();
+            }
+
+        }
+
+        public async void twitterLogin()
+        {
+
+            Windows.Storage.StorageFolder storageFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
+            Windows.Storage.StorageFile secretsFile = await storageFolder.GetFileAsync(@"secrets.txt");
+
+            string readThis = await FileIO.ReadTextAsync(secretsFile);
+            char[] delimiterChars = { ' ' };
+
+            string[] words = readThis.Split(delimiterChars);
+
+            string oauthToken = words[0];
+            string oAuthTokenSecret = words[1];
+
+            var authorizer = new UniversalAuthorizer
+            {
+                CredentialStore = new InMemoryCredentialStore
+                {
+                    ConsumerKey = "oG9yeSPTSRk6SrXvJdYzebTbq",
+                    ConsumerSecret = "TpJH0SJeL3ruoQ7C9vWrLUP7X6ZxgdXlBQERxp3MNuT5xaHF9v",
+                    OAuthToken= oauthToken,
+                    OAuthTokenSecret = oAuthTokenSecret
+                },
+                Callback = "http://www.subtwitr.com"
+            };
+
+            await authorizer.AuthorizeAsync();
+            ctx = new TwitterContext(authorizer);
+            //var credentials = authorizer.CredentialStore;
+            //userName.Text = credentials.ScreenName;
+        }
+
+        public static async Task<string> ReadTextFile(string _filename)
+        {
+            string contents = null;
+            StorageFolder localfolder = ApplicationData.Current.LocalFolder;
+            
+            if (await localfolder.TryGetItemAsync(_filename) != null)
+            {
+                StorageFile textfile = await localfolder.GetFileAsync(_filename);
+                contents = await FileIO.ReadTextAsync(textfile);
+            }
+
+            else
+            {
+                contents = null;
+            }
+
+            return contents;
         }
 
         private async void FilePicker_Click(object sender, RoutedEventArgs e)
@@ -89,6 +157,7 @@ namespace SubTwitr
                     CloudFile tweetFile = dir.GetFileReference(g.ToString() + @"\" + g.ToString() + ".tweet");
                     await tweetFile.UploadTextAsync(tweetBox.Text);
                 }
+
             }
         }
 
@@ -161,6 +230,46 @@ namespace SubTwitr
             {
                 tweetBox.Text = "";
             }
+        }
+
+        private async void storeTwitterAuthCreds()
+        {
+            var authorizer = new UniversalAuthorizer
+            {
+                CredentialStore = new InMemoryCredentialStore
+                {
+                    ConsumerKey = "oG9yeSPTSRk6SrXvJdYzebTbq",
+                    ConsumerSecret = "TpJH0SJeL3ruoQ7C9vWrLUP7X6ZxgdXlBQERxp3MNuT5xaHF9v"
+                },
+                Callback = "http://www.subtwitr.com"
+            };
+
+            await authorizer.AuthorizeAsync();
+            ctx = new TwitterContext(authorizer);
+
+            var oauthToken = authorizer.CredentialStore.OAuthToken;
+            var oauthSecret = authorizer.CredentialStore.OAuthTokenSecret;
+
+            string oauthTokenStr = oauthToken.ToString();
+            string oAuthSecretStr = oauthSecret.ToString();
+
+            Windows.Storage.StorageFolder storageFolder = Windows.Storage.ApplicationData.Current.LocalFolder; 
+
+            Windows.Storage.StorageFile sampleFile = await storageFolder.CreateFileAsync(@"secrets.txt", Windows.Storage.CreationCollisionOption.ReplaceExisting);
+
+            await Windows.Storage.FileIO.WriteTextAsync(sampleFile, oauthTokenStr + " " + oAuthSecretStr);
+
+            var credentials = authorizer.CredentialStore;
+            userName.Text = credentials.ScreenName;
+
+        }
+
+
+
+
+        private async void settings_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            
         }
     }
 }

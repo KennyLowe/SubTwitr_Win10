@@ -3,8 +3,8 @@
 "ResourceDimensions"		"scale-150"
 
 [Files]
-"C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\obj\ARM\Debug\filemap.scale-150.pri"			"resources.pri"
-"C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\obj\ARM\Debug\PackageLayout\Assets\Square71x71Logo.scale-150.png"			"Assets\Square71x71Logo.scale-150.png"
-"C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\obj\ARM\Debug\PackageLayout\Assets\Square150x150Logo.scale-150.png"			"Assets\Square150x150Logo.scale-150.png"
-"C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\obj\ARM\Debug\PackageLayout\Assets\SplashScreen.scale-150.png"			"Assets\SplashScreen.scale-150.png"
-"C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\obj\ARM\Debug\PackageLayout\Assets\BadgeLogo.scale-150.png"			"Assets\BadgeLogo.scale-150.png"
+"C:\git\SubTwitr\SubTwitr\obj\ARM\Debug\filemap.scale-150.pri"			"resources.pri"
+"C:\git\SubTwitr\SubTwitr\obj\ARM\Debug\PackageLayout\Assets\Square71x71Logo.scale-150.png"			"Assets\Square71x71Logo.scale-150.png"
+"C:\git\SubTwitr\SubTwitr\obj\ARM\Debug\PackageLayout\Assets\Square150x150Logo.scale-150.png"			"Assets\Square150x150Logo.scale-150.png"
+"C:\git\SubTwitr\SubTwitr\obj\ARM\Debug\PackageLayout\Assets\SplashScreen.scale-150.png"			"Assets\SplashScreen.scale-150.png"
+"C:\git\SubTwitr\SubTwitr\obj\ARM\Debug\PackageLayout\Assets\BadgeLogo.scale-150.png"			"Assets\BadgeLogo.scale-150.png"

@@ -25,6 +25,12 @@
     <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\bin\x86\Debug\SubTwitr.exe">
       <PackagePath>entrypoint\SubTwitr.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kenny\.nuget\packages\Auth0.Windows.UWP\1.0.2\lib\uap10.0\Auth0.LoginClient.dll">
+      <PackagePath>Auth0.LoginClient.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kenny\.nuget\packages\linqtotwitter\4.1.0\lib\uap10.0\LinqToTwitter.uap10.dll">
+      <PackagePath>LinqToTwitter.uap10.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kenny\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
     </AppxPackagedFile>
@@ -130,11 +136,23 @@
     <AppxPackagedFile Include="C:\Users\kenny\.nuget\packages\Microsoft.Win32.Primitives\4.0.0\lib\dotnet\Microsoft.Win32.Primitives.dll">
       <PackagePath>Microsoft.Win32.Primitives.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kenny\.nuget\packages\Newtonsoft.Json\6.0.8\lib\netcore45\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="C:\Users\kenny\.nuget\packages\Newtonsoft.Json\8.0.2\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kenny\.nuget\packages\runtime.any.System.Private.DataContractSerialization\4.1.0\lib\netcore50\System.Private.DataContractSerialization.dll">
       <PackagePath>System.Private.DataContractSerialization.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kenny\.nuget\packages\Rx-Core\2.2.5\lib\windows8\System.Reactive.Core.dll">
+      <PackagePath>System.Reactive.Core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kenny\.nuget\packages\Rx-Interfaces\2.2.5\lib\windows8\System.Reactive.Interfaces.dll">
+      <PackagePath>System.Reactive.Interfaces.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kenny\.nuget\packages\Rx-Linq\2.2.5\lib\windows8\System.Reactive.Linq.dll">
+      <PackagePath>System.Reactive.Linq.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kenny\.nuget\packages\Rx-PlatformServices\2.2.5\lib\windows8\System.Reactive.PlatformServices.dll">
+      <PackagePath>System.Reactive.PlatformServices.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kenny\.nuget\packages\System.AppContext\4.0.0\lib\netcore50\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>
@@ -538,6 +556,9 @@
     <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Assets\secrets.txt">
+      <PackagePath>Assets\secrets.txt</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>

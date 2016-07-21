@@ -6,7 +6,7 @@
     <autoResourcePackage qualifier="DXFeatureLevel" />
     <omitSchemaFromResourcePacks />
   </packaging>
-  <index root="\" startIndexAt="C:\Users\kenny\OneDrive\Documents\Visual Studio 2015\Projects\SubTwitr\SubTwitr\bin\ARM\Debug\resources.pri">
+  <index root="\" startIndexAt="C:\git\SubTwitr\SubTwitr\bin\ARM\Debug\resources.pri">
     <default>
       <qualifier name="Language" value="en-US" />
       <qualifier name="Contrast" value="standard" />
