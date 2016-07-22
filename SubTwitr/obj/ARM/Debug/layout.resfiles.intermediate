@@ -4,6 +4,7 @@ Assets\BadgeLogo.scale-150.png
 Assets\BadgeLogo.scale-200.png
 Assets\BadgeLogo.scale-400.png
 Assets\LockScreenLogo.scale-200.png
+Assets\secrets.txt
 Assets\SplashScreen.scale-100.png
 Assets\SplashScreen.scale-125.png
 Assets\SplashScreen.scale-150.png
@@ -25,6 +26,7 @@ Assets\Square71x71Logo.scale-400.png
 Assets\StoreLogo.png
 Assets\Wide310x150Logo.scale-200.png
 SubTwitr.xr.xml
+Images\NoConn.png
 Images\Settings.png
 Images\ST.png
 Properties\Default.rd.xml

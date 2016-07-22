@@ -14,9 +14,9 @@
                 </Button.Background>
             </Button>
             <Border CornerRadius="25" Background="#FFB8C6FE" BorderBrush="white" BorderThickness="5" >
-                <TextBox x:ConnectionId='10' x:Name="tweetBox" MaxLength="140" Height="104" Margin="32.667,126.667,35.333,0" TextWrapping="Wrap" Text="Enter Tweet" VerticalAlignment="Top"                             />
+                <TextBox x:ConnectionId='12' x:Name="tweetBox" MaxLength="140" Height="104" Margin="32.667,126.667,35.333,0" TextWrapping="Wrap" Text="Enter Tweet" VerticalAlignment="Top"                             />
             </Border>
-            <Image x:ConnectionId='2' x:Name="settings" Source ="Images/Settings.png" HorizontalAlignment="Left" Height="110" Margin="241,10,0,0" VerticalAlignment="Top" Width="119"/>
+            <Image x:ConnectionId='2' x:Name="settings" Source ="Images/Settings.png" HorizontalAlignment="Left" Height="110" Margin="241,10,0,0" VerticalAlignment="Top" Width="119"                         />
             <Button x:ConnectionId='3' x:Name="PickFile" Content="Choose Video" HorizontalAlignment="Left" Opacity="1" Foreground="White" Margin="68,253,0,0" VerticalAlignment="Top" Height="75" Width="224"                          Background="#FF5A6DC2" FontSize="25">
             </Button>
             <Button x:ConnectionId='4' x:Name="TweetFile" Content="Tweet Video" HorizontalAlignment="Left" Foreground="White" Margin="68,352,0,0" VerticalAlignment="Top" Height="75" Width="224"                        Background="#FF5A6DC2" FontSize="25">
@@ -27,6 +27,8 @@
             <MediaElement x:ConnectionId='7' x:Name="mediaElement" Visibility="Visible" AutoPlay="false" HorizontalAlignment="Left" Height="100" Margin="78,480,0,0" VerticalAlignment="Top" Width="200"                               />
             <TextBlock x:ConnectionId='8' x:Name="playPause" TextAlignment="Center" Text="No file selected" Width="200" HorizontalAlignment="Center" Height="100" Margin="78,484,82,-4" VerticalAlignment="Center" Opacity="0.995" Foreground="White"                          />
             <Image x:ConnectionId='9' x:Name="image" HorizontalAlignment="Left" Height="108" Margin="9,12,0,0" VerticalAlignment="Top" Width="112" Source="/Images/ST.png"/>
+            <TextBlock x:ConnectionId='10' x:Name="userName" HorizontalAlignment="Center" Height="29" Margin="150,104,119,0" TextWrapping="Wrap" Text="No User" VerticalAlignment="Top" Width="91"/>
+            <Image x:ConnectionId='11' x:Name="profilePic" HorizontalAlignment="Left" Height="81" Margin="140,18,0,0" VerticalAlignment="Top" Width="82"/>
         </Grid>
     </Viewbox>
 </Page>

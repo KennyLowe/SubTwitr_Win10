@@ -1,3 +1,4 @@
+C:\git\SubTwitr\SubTwitr\bin\ARM\Debug\Assets\secrets.txt
 C:\git\SubTwitr\SubTwitr\bin\ARM\Debug\Images\Settings.png
 C:\git\SubTwitr\SubTwitr\bin\ARM\Debug\Images\ST.png
 C:\git\SubTwitr\SubTwitr\bin\ARM\Debug\App.xbf
@@ -11,6 +12,9 @@ C:\git\SubTwitr\SubTwitr\bin\ARM\Debug\Core\AppxManifest.xml
 C:\git\SubTwitr\SubTwitr\bin\ARM\Debug\Core\ForBundle\AppxManifest.xml
 C:\git\SubTwitr\SubTwitr\bin\ARM\Debug\Core\SubTwitr.exe
 C:\git\SubTwitr\SubTwitr\bin\ARM\Debug\SubTwitr.build.appxrecipe
+C:\git\SubTwitr\SubTwitr\bin\ARM\Debug\Auth0.LoginClient.dll
+C:\git\SubTwitr\SubTwitr\bin\ARM\Debug\Auth0.LoginClient.pdb
+C:\git\SubTwitr\SubTwitr\bin\ARM\Debug\LinqToTwitter.uap10.dll
 C:\git\SubTwitr\SubTwitr\bin\ARM\Debug\Microsoft.CSharp.dll
 C:\git\SubTwitr\SubTwitr\bin\ARM\Debug\Microsoft.Data.Edm.dll
 C:\git\SubTwitr\SubTwitr\bin\ARM\Debug\de\Microsoft.Data.Edm.resources.dll
@@ -48,6 +52,10 @@ C:\git\SubTwitr\SubTwitr\bin\ARM\Debug\Microsoft.VisualBasic.dll
 C:\git\SubTwitr\SubTwitr\bin\ARM\Debug\Microsoft.Win32.Primitives.dll
 C:\git\SubTwitr\SubTwitr\bin\ARM\Debug\Newtonsoft.Json.dll
 C:\git\SubTwitr\SubTwitr\bin\ARM\Debug\System.Private.DataContractSerialization.dll
+C:\git\SubTwitr\SubTwitr\bin\ARM\Debug\System.Reactive.Core.dll
+C:\git\SubTwitr\SubTwitr\bin\ARM\Debug\System.Reactive.Interfaces.dll
+C:\git\SubTwitr\SubTwitr\bin\ARM\Debug\System.Reactive.Linq.dll
+C:\git\SubTwitr\SubTwitr\bin\ARM\Debug\System.Reactive.PlatformServices.dll
 C:\git\SubTwitr\SubTwitr\bin\ARM\Debug\System.AppContext.dll
 C:\git\SubTwitr\SubTwitr\bin\ARM\Debug\System.Collections.dll
 C:\git\SubTwitr\SubTwitr\bin\ARM\Debug\System.Collections.Concurrent.dll
@@ -216,6 +224,9 @@ C:\git\SubTwitr\SubTwitr\obj\ARM\Debug\FxResources.System.Xml.XmlDocument.SR.res
 C:\git\SubTwitr\SubTwitr\obj\ARM\Debug\FxResources.System.Xml.XmlSerializer.SR.resw
 C:\git\SubTwitr\SubTwitr\obj\ARM\Debug\Microsoft.Data.Edm\en-US\Microsoft.Data.Edm.resw
 C:\git\SubTwitr\SubTwitr\obj\ARM\Debug\Microsoft.Data.OData\en-US\Microsoft.Data.OData.resw
+C:\git\SubTwitr\SubTwitr\obj\ARM\Debug\System.Reactive.Core\en-US\System.Reactive.Strings_Core.resw
+C:\git\SubTwitr\SubTwitr\obj\ARM\Debug\System.Reactive.Linq\en-US\System.Reactive.Strings_Linq.resw
+C:\git\SubTwitr\SubTwitr\obj\ARM\Debug\System.Reactive.PlatformServices\en-US\System.Reactive.Strings_PlatformServices.resw
 C:\git\SubTwitr\SubTwitr\obj\ARM\Debug\System.Spatial\en-US\System.Spatial.resw
 C:\git\SubTwitr\SubTwitr\obj\ARM\Debug\SubTwitr.csproj.GenerateResource.Cache
 C:\git\SubTwitr\SubTwitr\obj\ARM\Debug\priconfig.xml
@@ -229,4 +240,6 @@ C:\git\SubTwitr\SubTwitr\obj\ARM\Debug\pri.resfiles.intermediate
 C:\git\SubTwitr\SubTwitr\obj\ARM\Debug\qualifiers.txt
 C:\git\SubTwitr\SubTwitr\obj\ARM\Debug\qualifiers.txt.intermediate
 C:\git\SubTwitr\SubTwitr\obj\ARM\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\git\SubTwitr\SubTwitr\obj\ARM\Debug\Auth0.LoginClient.pri.xml
 C:\git\SubTwitr\SubTwitr\obj\ARM\Debug\ProjectArchitectures.txt
+C:\git\SubTwitr\SubTwitr\bin\ARM\Debug\Images\NoConn.png

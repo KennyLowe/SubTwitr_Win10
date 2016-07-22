@@ -524,6 +524,9 @@
       <PackagePath>Assets\Square71x71Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Images\NoConn.png">
+      <PackagePath>Images\NoConn.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Images\Settings.png">
       <PackagePath>Images\Settings.png</PackagePath>
     </AppxPackagedFile>
