@@ -448,6 +448,9 @@
     <AppxPackagedFile Include="C:\Users\kenny\.nuget\packages\WindowsAzure.Storage\7.1.2\lib\win8\Microsoft.WindowsAzure.Storage.dll">
       <PackagePath>Microsoft.WindowsAzure.Storage.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\git\SubTwitr\BackgroundTasks\bin\x86\Debug\BackgroundTasks.winmd">
+      <PackagePath>BackgroundTasks.winmd</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Assets\BadgeLogo.scale-100.png">
       <PackagePath>Assets\BadgeLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
@@ -524,8 +527,14 @@
       <PackagePath>Assets\Square71x71Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Images\back.png">
+      <PackagePath>Images\back.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Images\NoConn.png">
       <PackagePath>Images\NoConn.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Images\refresh.png">
+      <PackagePath>Images\refresh.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Images\Settings.png">
       <PackagePath>Images\Settings.png</PackagePath>

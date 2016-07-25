@@ -14,12 +14,12 @@
                 </Button.Background>
             </Button>
             <Border CornerRadius="25" Background="#FFB8C6FE" BorderBrush="white" BorderThickness="5" >
-                <TextBox x:Name="tweetBox" MaxLength="140" Height="104" Margin="32.667,126.667,35.333,0" TextWrapping="Wrap" Text="Enter Tweet" VerticalAlignment="Top" GotFocus="tweetBox_GotFocus"/>
+                <TextBox x:Name="tweetBox" MaxLength="140" Height="104" Margin="34.667,175.667,33.333,0" TextWrapping="Wrap" Text="Enter Tweet" VerticalAlignment="Top" GotFocus="tweetBox_GotFocus"/>
             </Border>
             <Image x:Name="settings" Source ="Images/Settings.png" HorizontalAlignment="Left" Height="110" Margin="241,10,0,0" VerticalAlignment="Top" Width="119" Tapped="settings_Tapped"/>
-            <Button x:Name="PickFile" Content="Choose Video" HorizontalAlignment="Left" Opacity="1" Foreground="White" Margin="68,253,0,0" VerticalAlignment="Top" Height="75" Width="224" Click="FilePicker_Click" Background="#FF5A6DC2" FontSize="25">
+            <Button x:Name="PickFile" Content="Choose&#xD;&#xA;Video" HorizontalAlignment="Left" Opacity="1" Foreground="White" Margin="82,356,0,0" VerticalAlignment="Top" Height="75" Width="87" Click="FilePicker_Click" Background="#FF5A6DC2" FontSize="20">
             </Button>
-            <Button x:Name="TweetFile" Content="Tweet Video" HorizontalAlignment="Left" Foreground="White" Margin="68,352,0,0" VerticalAlignment="Top" Height="75" Width="224" Click="SendFile_Click" Background="#FF5A6DC2" FontSize="25">
+            <Button x:Name="TweetFile" Content="Tweet&#xD;&#xA;Video" HorizontalAlignment="Left" Foreground="White" Margin="186,356,0,0" VerticalAlignment="Top" Height="75" Width="88" Click="SendFile_Click" Background="#FF5A6DC2" FontSize="20">
             </Button>
             <TextBlock x:Name="OutputTextBlock" FontSize="10" TextAlignment="Center" HorizontalAlignment="Left" Margin="68,445,0,0" TextWrapping="Wrap" Text="No File Selected" VerticalAlignment="Top" Height="49" Width="224" Foreground="#FFC02B2B"/>
             <Border x:Name="playPauseBorder" BorderBrush="#7F000000" Width="200" Height="100" Margin="62.667,420.667,67.333,0" VerticalAlignment="Center" CornerRadius="5" Background="Black" Tapped="playPauseBorder_Tapped">
@@ -27,8 +27,12 @@
             <MediaElement x:Name="mediaElement" Visibility="Visible" AutoPlay="false" HorizontalAlignment="Left" Height="100" Margin="78,480,0,0" VerticalAlignment="Top" Width="200" Tapped="mediaElement_Tapped_1"/>
             <TextBlock x:Name="playPause" TextAlignment="Center" Text="No file selected" Width="200" HorizontalAlignment="Center" Height="100" Margin="78,484,82,-4" VerticalAlignment="Center" Opacity="0.995" Foreground="White" Tapped="playPause_Tapped"/>
             <Image x:Name="image" HorizontalAlignment="Left" Height="108" Margin="9,12,0,0" VerticalAlignment="Top" Width="112" Source="/Images/ST.png"/>
-            <TextBlock x:Name="userName" HorizontalAlignment="Center" Height="29" Margin="150,104,119,0" TextWrapping="Wrap" Text="No User" VerticalAlignment="Top" Width="91"/>
+            <TextBlock x:Name="userName" x:FieldModifier="public" HorizontalAlignment="Center" Height="29" Margin="150,104,119,0" TextWrapping="Wrap" Text="No User" VerticalAlignment="Top" Width="91"/>
             <Image x:Name="profilePic" HorizontalAlignment="Left" Height="81" Margin="140,18,0,0" VerticalAlignment="Top" Width="82"/>
+            <ProgressBar x:Name="progressBar" IsIndeterminate="True" Visibility="Collapsed" Height="100" Margin="100,402,100,0" VerticalAlignment="Top"/>
+            <Image x:Name="refreshButton" Source="Images/refresh.png" Visibility="Collapsed" HorizontalAlignment="Left" Height="39" Margin="158,140,0,0" VerticalAlignment="Top" Width="39" Tapped="refreshButton_Tapped"/>
+            <Button x:Name="optionsButton" FontSize="20" Content="Tweet Options" HorizontalAlignment="Left" Height="42
+                    " Margin="82,301,0,0" VerticalAlignment="Top" Foreground="White" Background="#FF5A6DC2" Width="192" Tapped="optionsButton_Tapped"/>
         </Grid>
     </Viewbox>
 </Page>

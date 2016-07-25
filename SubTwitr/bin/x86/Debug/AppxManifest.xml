@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="cbc508ac-39af-41f0-8ad0-1405c5ffb205" Publisher="CN=kenny" Version="1.0.19.0" ProcessorArchitecture="x86" />
+  <Identity Name="cbc508ac-39af-41f0-8ad0-1405c5ffb205" Publisher="CN=kenny" Version="1.0.20.0" ProcessorArchitecture="x86" />
   <mp:PhoneIdentity PhoneProductId="cbc508ac-39af-41f0-8ad0-1405c5ffb205" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>SubTwitr</DisplayName>
@@ -36,11 +36,28 @@
           <uap:Rotation Preference="portraitFlipped" />
         </uap:InitialRotationPreference>
       </uap:VisualElements>
+      <Extensions>
+        <Extension Category="windows.backgroundTasks" EntryPoint="BackgroundTasks.ConnectionStatus">
+          <BackgroundTasks>
+            <Task Type="general" />
+            <Task Type="systemEvent" />
+            <Task Type="timer" />
+          </BackgroundTasks>
+        </Extension>
+      </Extensions>
     </Application>
   </Applications>
   <Capabilities>
     <Capability Name="internetClient" />
   </Capabilities>
+  <Extensions>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>CLRHost.dll</Path>
+        <ActivatableClass ActivatableClassId="BackgroundTasks.ConnectionStatus" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+  </Extensions>
   <build:Metadata>
     <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v5.0" />
     <build:Item Name="VisualStudio" Version="14.0" />

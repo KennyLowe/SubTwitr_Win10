@@ -16,25 +16,25 @@
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>A0F15E86356F158D4C231DB011F072007F39503C8F224A37D5A91400B8D10544</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>cbc508ac-39af-41f0-8ad0-1405c5ffb205_1.0.19.0_x86__nf1t380qfcv3p</RegisteredPackageMoniker>
+    <RegisteredManifestChecksum>249331B305B8300FA64E32646C8224A86DDED80996D9A8BE437B57CA4FDDEC8D</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>cbc508ac-39af-41f0-8ad0-1405c5ffb205_1.0.20.0_x86__nf1t380qfcv3p</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>cbc508ac-39af-41f0-8ad0-1405c5ffb205_nf1t380qfcv3p!App</RegisteredUserModeAppID>
     <RegisteredPackageID>cbc508ac-39af-41f0-8ad0-1405c5ffb205</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=kenny</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.19.0</RegisteredVersion>
+    <RegisteredVersion>1.0.20.0</RegisteredVersion>
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\git\SubTwitr\SubTwitr\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-07-22T10:11:35.895</Modified>
+      <Modified>2016-07-25T16:29:57.406</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\bin\x86\Debug\SubTwitr.exe">
       <PackagePath>entrypoint\SubTwitr.exe</PackagePath>
-      <Modified>2016-07-22T10:11:32.365</Modified>
+      <Modified>2016-07-25T16:29:56.235</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kenny\.nuget\packages\Auth0.Windows.UWP\1.0.2\lib\uap10.0\Auth0.LoginClient.dll">
       <PackagePath>Auth0.LoginClient.dll</PackagePath>
@@ -600,6 +600,10 @@
       <PackagePath>Microsoft.WindowsAzure.Storage.dll</PackagePath>
       <Modified>2016-07-01T12:59:16.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\git\SubTwitr\BackgroundTasks\bin\x86\Debug\BackgroundTasks.winmd">
+      <PackagePath>BackgroundTasks.winmd</PackagePath>
+      <Modified>2016-07-25T13:44:51.199</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Assets\BadgeLogo.scale-100.png">
       <PackagePath>Assets\BadgeLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
@@ -695,9 +699,17 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-07-19T16:49:42.720</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Images\back.png">
+      <PackagePath>Images\back.png</PackagePath>
+      <Modified>2016-07-25T14:04:52.349</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Images\NoConn.png">
       <PackagePath>Images\NoConn.png</PackagePath>
       <Modified>2016-07-22T10:10:54.778</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Images\refresh.png">
+      <PackagePath>Images\refresh.png</PackagePath>
+      <Modified>2016-07-25T13:40:49.955</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\Images\Settings.png">
       <PackagePath>Images\Settings.png</PackagePath>
@@ -751,7 +763,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\bin\x86\Debug\SubTwitr.xr.xml">
       <PackagePath>SubTwitr.xr.xml</PackagePath>
-      <Modified>2016-07-22T09:57:22.403</Modified>
+      <Modified>2016-07-25T15:19:06.581</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -759,11 +771,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-07-22T10:11:34.522</Modified>
+      <Modified>2016-07-25T15:26:56.421</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\bin\x86\Debug\Core\SubTwitr.exe">
       <PackagePath>SubTwitr.exe</PackagePath>
-      <Modified>2016-07-22T10:11:35.888</Modified>
+      <Modified>2016-07-25T16:29:57.393</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

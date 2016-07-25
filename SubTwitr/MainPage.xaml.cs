@@ -24,6 +24,8 @@ using System.Threading.Tasks;
 using Windows.UI.Xaml.Media.Imaging;
 using System.Runtime;
 using System.Runtime.InteropServices;
+using Windows.ApplicationModel.Background;
+using System.Threading;
 
 namespace SubTwitr
 {
@@ -47,16 +49,46 @@ namespace SubTwitr
         TwitterContext ctx;
         SingleUserAuthorizer userAuth;
         UniversalAuthorizer uniAuth;
+        CancellationTokenSource _cts;
+
+        private async void RegisterBackgroundTask()
+        {
+            var taskName = "UpdateInternetConnection";
+
+            var backgroundAccessStatus = await BackgroundExecutionManager.RequestAccessAsync();
+            if (backgroundAccessStatus == BackgroundAccessStatus.AllowedMayUseActiveRealTimeConnectivity || backgroundAccessStatus == BackgroundAccessStatus.AllowedWithAlwaysOnRealTimeConnectivity)
+            {
+                foreach (var task in BackgroundTaskRegistration.AllTasks)
+                {
+                    if (task.Value.Name == taskName)
+                    {
+                        return;
+                    }
+                }
+
+                BackgroundTaskBuilder taskBuilder = new BackgroundTaskBuilder();
+                taskBuilder.Name = taskName;
+                taskBuilder.TaskEntryPoint = typeof(BackgroundTasks.ConnectionStatus).FullName;
+                taskBuilder.SetTrigger(new TimeTrigger(120, false));
+
+                var registration = taskBuilder.Register();
+            }
+        }
 
         public MainPage()
         {
-
             this.InitializeComponent();
+            _cts = new CancellationTokenSource();
+            RegisterBackgroundTask();
             runSetup();
         }
 
+
+
         public void runSetup()
         {
+
+
             if (checkForInternetConnection.IsConnectedToInternet())
             {
                 twitterLogin();
@@ -66,8 +98,11 @@ namespace SubTwitr
                 string url = "ms-appx:///Images/NoConn.png";
                 profilePic.Source = new BitmapImage(new Uri(url, UriKind.Absolute));
                 userName.Text = "No Conn";
+                refreshButton.Visibility = Visibility.Visible;
             }
         }
+
+
 
         public async void twitterLogin()
         {
@@ -206,41 +241,51 @@ namespace SubTwitr
             } 
         }
 
-
         private async void SendFile_Click(object sender, RoutedEventArgs e)
         {
             if (file != null)
             {
-                CloudStorageAccount storageAccount = CloudStorageAccount.Parse("DefaultEndpointsProtocol=https;AccountName=subtwitr;AccountKey=y2FHEejelfEDF8w38kdYWSdpgBcJ39DsHU2fkjFbJT80fUPS8CYvg73QIUpO5pJYQZs8QImkQdN2s91cWvawzA==");
-                CloudFileClient fileClient = storageAccount.CreateCloudFileClient();
-                CloudFileShare share = fileClient.GetShareReference("subtwitr");
-                Guid g = Guid.NewGuid();
-
-                // Create folder name based on GUID
-                CloudFileDirectory dir = share.GetRootDirectoryReference();
-                CloudFileDirectory fileDirectory = null;
-                fileDirectory = dir.GetDirectoryReference(g.ToString());
-                await fileDirectory.CreateIfNotExistsAsync();
-
-                //Upload video file
-                CloudFile destFile = dir.GetFileReference(g.ToString() + @"\" + g.ToString() + ".mp4");
-                await destFile.UploadFromFileAsync(file);
-
-                //Upload Tweet
-                if ((tweetBox.Text != null) && (tweetBox.Text != "Enter Tweet"))
+                if (checkForInternetConnection.IsConnectedToInternet())
                 {
-                    CloudFile tweetFile = dir.GetFileReference(g.ToString() + @"\" + g.ToString() + ".tweet");
-                    await tweetFile.UploadTextAsync(tweetBox.Text);
+
+                    CloudStorageAccount storageAccount = CloudStorageAccount.Parse("DefaultEndpointsProtocol=https;AccountName=subtwitr;AccountKey=y2FHEejelfEDF8w38kdYWSdpgBcJ39DsHU2fkjFbJT80fUPS8CYvg73QIUpO5pJYQZs8QImkQdN2s91cWvawzA==");
+                    CloudFileClient fileClient = storageAccount.CreateCloudFileClient();
+                    CloudFileShare share = fileClient.GetShareReference("subtwitr");
+                    Guid g = Guid.NewGuid();
+
+                    // Create folder name based on GUID
+                    CloudFileDirectory dir = share.GetRootDirectoryReference();
+                    CloudFileDirectory fileDirectory = null;
+                    fileDirectory = dir.GetDirectoryReference(g.ToString());
+                    await fileDirectory.CreateIfNotExistsAsync();
+
+                    //Upload video file
+                    CloudFile destFile = dir.GetFileReference(g.ToString() + @"\" + g.ToString() + ".mp4");
+                    await destFile.UploadFromFileAsync(file);
+
+                    //Upload Tweet
+                    if ((tweetBox.Text != null) && (tweetBox.Text != "Enter Tweet"))
+                    {
+                        CloudFile tweetFile = dir.GetFileReference(g.ToString() + @"\" + g.ToString() + ".tweet");
+                        await tweetFile.UploadTextAsync(tweetBox.Text);
+                    }
+
+                    //upload oAuth Details
+
+                    Windows.Storage.StorageFolder storageFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
+                    Windows.Storage.StorageFile oAuthFile = await storageFolder.GetFileAsync(@"secrets.txt");
+                    CloudFile destoAuth = dir.GetFileReference(g.ToString() + "\\" + g.ToString() + ".oauth");
+
+
+                    await destoAuth.UploadFromFileAsync(oAuthFile);
                 }
-
-                //upload oAuth Details
-
-                Windows.Storage.StorageFolder storageFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
-                Windows.Storage.StorageFile oAuthFile = await storageFolder.GetFileAsync(@"secrets.txt");
-                CloudFile destoAuth = dir.GetFileReference(g.ToString() + "\\" + g.ToString() + ".oauth");
-                await destoAuth.UploadFromFileAsync(oAuthFile);
-
-
+                else
+                {
+                    string url = "ms-appx:///Images/NoConn.png";
+                    profilePic.Source = new BitmapImage(new Uri(url, UriKind.Absolute));
+                    userName.Text = "No Conn";
+                    refreshButton.Visibility = Visibility.Visible;
+                }
             }
         }
 
@@ -319,6 +364,27 @@ namespace SubTwitr
         private async void settings_Tapped(object sender, TappedRoutedEventArgs e)
         {
             
+        }
+
+        private void refreshButton_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            if (checkForInternetConnection.IsConnectedToInternet())
+            {
+                refreshButton.Visibility = Visibility.Collapsed;
+                twitterLogin();
+            }
+            else
+            {
+                string url = "ms-appx:///Images/NoConn.png";
+                profilePic.Source = new BitmapImage(new Uri(url, UriKind.Absolute));
+                userName.Text = "No Conn";
+                refreshButton.Visibility = Visibility.Visible;
+            }
+        }
+
+        private void optionsButton_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Options), null);
         }
     }
 }
