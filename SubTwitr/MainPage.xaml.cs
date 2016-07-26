@@ -51,6 +51,11 @@ namespace SubTwitr
         UniversalAuthorizer uniAuth;
         CancellationTokenSource _cts;
 
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            runSetup();
+        }
+
         private async void RegisterBackgroundTask()
         {
             var taskName = "UpdateInternetConnection";
@@ -78,8 +83,6 @@ namespace SubTwitr
         public MainPage()
         {
             this.InitializeComponent();
-            
-
             _cts = new CancellationTokenSource();
             RegisterBackgroundTask();
             runSetup();
@@ -89,8 +92,6 @@ namespace SubTwitr
 
         public void runSetup()
         {
-
-
             if (checkForInternetConnection.IsConnectedToInternet())
             {
                 twitterLogin();

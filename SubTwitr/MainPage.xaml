@@ -31,8 +31,7 @@
             <Image x:Name="profilePic" HorizontalAlignment="Left" Height="81" Margin="140,18,0,0" VerticalAlignment="Top" Width="82"/>
             <ProgressBar x:Name="progressBar" IsIndeterminate="True" Visibility="Collapsed" Height="100" Margin="100,402,100,0" VerticalAlignment="Top"/>
             <Image x:Name="refreshButton" Source="Images/refresh.png" Visibility="Collapsed" HorizontalAlignment="Left" Height="39" Margin="158,140,0,0" VerticalAlignment="Top" Width="39" Tapped="refreshButton_Tapped"/>
-            <Button x:Name="optionsButton" FontSize="20" Content="Tweet Options" HorizontalAlignment="Left" Height="42
-                    " Margin="82,301,0,0" VerticalAlignment="Top" Foreground="White" Background="#FF5A6DC2" Width="192" Tapped="optionsButton_Tapped"/>
+            <Button x:Name="optionsButton" FontSize="20" Content="Tweet Options" HorizontalAlignment="Left" Height="42" Margin="82,301,0,0" VerticalAlignment="Top" Foreground="White" Background="#FF5A6DC2" Width="192" Tapped="optionsButton_Tapped"/>
         </Grid>
     </Viewbox>
 </Page>

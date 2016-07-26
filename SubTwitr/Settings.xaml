@@ -8,7 +8,10 @@
     mc:Ignorable="d">
     <Viewbox>
         <Grid Background="White" Width="360" Height="640">
-            <Border CornerRadius="25" Background="#FFB8C6FE" BorderBrush="white" BorderThickness="5" />
+            <Border CornerRadius="25" Background="#FFB8C6FE" BorderBrush="white" BorderThickness="5" >
+                <Button x:Name="clearTwitter" Width ="200" Background="#FF5A6DC2" Foreground="White" Content="Clear Twitter Settings" HorizontalAlignment="Stretch" Height="76" Margin="71.8,89.8,72.2,0" VerticalAlignment="Top" Tapped="clearTwitter_Tapped"/>
+            </Border>
+            <Button x:Name="setTwitter" Foreground="White" Width="200" Background="#FF5A6DC2" Content="Authenticate with Twitter" HorizontalAlignment="Stretch" Height="76" Margin="72,218,72,0" VerticalAlignment="Top" Tapped="setTwitter_Tapped"/>
             <Image x:Name="backButton" HorizontalAlignment="Left" Height="73" Margin="9,12,0,0" VerticalAlignment="Top" Width="59" Source="/Images/back.png" Tapped="backButton_Tapped"/>
         </Grid>
     </Viewbox>
