@@ -78,6 +78,8 @@ namespace SubTwitr
         public MainPage()
         {
             this.InitializeComponent();
+            
+
             _cts = new CancellationTokenSource();
             RegisterBackgroundTask();
             runSetup();
@@ -210,6 +212,8 @@ namespace SubTwitr
             return contents;
         }
 
+
+
         private async void FilePicker_Click(object sender, RoutedEventArgs e)
         {
                 FileOpenPicker openPicker = new FileOpenPicker();
@@ -229,28 +233,34 @@ namespace SubTwitr
             if (file != null)
             {
                 // Application now has read/write access to the picked file
-                OutputTextBlock.Text = "File Selected: " + file.Name;
                 var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
-                mediaElement.SetSource(stream, file.ContentType);
-                if (mediaElement.NaturalDuration.HasTimeSpan)
+
+                Windows.Storage.FileProperties.VideoProperties videoProperties = await file.Properties.GetVideoPropertiesAsync();
+                Duration videoDuration = videoProperties.Duration;
+
+                double totalTime = videoDuration.TimeSpan.TotalSeconds;
+
+                if (totalTime > 30)
                 {
-                    if (mediaElement.NaturalDuration.TimeSpan.TotalSeconds > 30)
-                    {
-                        OutputTextBlock.Text = "File is too long. 30 seconds max.";
-                        mediaElement.Source = null;
-                    }
-                    else
-                    {
-                        playPause.Text = "Tap to Play";
-                        playPauseBorder.Visibility = Visibility.Visible;
-                        playPause.Visibility = Visibility.Visible;
-                    }
+                    OutputTextBlock.Text = "File is too long. 30 seconds max.";
+                    mediaElement.Source = null;
+                }
+                else
+                {
+                    OutputTextBlock.Text = "File Selected: " + file.Name;
+                    mediaElement.SetSource(stream, file.ContentType);
+                    playPause.Text = "Tap to Play";
+                    playPauseBorder.Visibility = Visibility.Visible;
+                    playPause.Visibility = Visibility.Visible;
                 }
             }
             else
             {
                 OutputTextBlock.Text = "Operation cancelled.";
-            } 
+            }
+
+
+
         }
 
         private async void SendFile_Click(object sender, RoutedEventArgs e)
