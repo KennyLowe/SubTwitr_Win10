@@ -242,25 +242,20 @@ namespace SubTwitr
 
                 if (totalTime > 30)
                 {
-                    OutputTextBlock.Text = "File is too long. 30 seconds max.";
-                    mediaElement.Source = null;
+                    //TODO - Change back end to use async, which supports 140 seconds.
+                    var dialog = new MessageDialog("This file is too long, the Twitter sync API supports videos which are 30 seconds max in length. If you choose to continue, file will be truncated to 30 seconds.");
+                    await dialog.ShowAsync();
                 }
-                else
-                {
                     OutputTextBlock.Text = "File Selected: " + file.Name;
                     mediaElement.SetSource(stream, file.ContentType);
                     playPause.Text = "Tap to Play";
                     playPauseBorder.Visibility = Visibility.Visible;
                     playPause.Visibility = Visibility.Visible;
-                }
             }
             else
             {
                 OutputTextBlock.Text = "Operation cancelled.";
             }
-
-
-
         }
 
         private async void SendFile_Click(object sender, RoutedEventArgs e)
@@ -303,7 +298,6 @@ namespace SubTwitr
                     Windows.Storage.StorageFolder storageFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
                     Windows.Storage.StorageFile oAuthFile = await storageFolder.GetFileAsync(@"secrets.txt");
                     CloudFile destoAuth = dir.GetFileReference(g.ToString() + "\\" + g.ToString() + ".oauth");
-
 
                     await destoAuth.UploadFromFileAsync(oAuthFile);
                 }
