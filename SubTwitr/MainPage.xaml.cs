@@ -270,6 +270,12 @@ namespace SubTwitr
                         await tweetFile.UploadTextAsync(tweetBox.Text);
                     }
 
+                    if ((tweetBox.Text == null) || (tweetBox.Text == "Enter Tweet"))
+                    {
+                        CloudFile tweetFile = dir.GetFileReference(g.ToString() + @"\" + g.ToString() + ".tweet");
+                        await tweetFile.UploadTextAsync("#subtwitr");
+                    }
+
                     //upload oAuth Details
 
                     Windows.Storage.StorageFolder storageFolder = Windows.Storage.ApplicationData.Current.LocalFolder;

@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\git\SubTwitr\SubTwitr\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-07-25T16:29:57.406</Modified>
+      <Modified>2016-07-26T13:38:55.242</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\bin\x86\Debug\SubTwitr.exe">
       <PackagePath>entrypoint\SubTwitr.exe</PackagePath>
-      <Modified>2016-07-25T16:29:56.235</Modified>
+      <Modified>2016-07-26T13:38:54.247</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kenny\.nuget\packages\Auth0.Windows.UWP\1.0.2\lib\uap10.0\Auth0.LoginClient.dll">
       <PackagePath>Auth0.LoginClient.dll</PackagePath>
@@ -775,7 +775,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\git\SubTwitr\SubTwitr\bin\x86\Debug\Core\SubTwitr.exe">
       <PackagePath>SubTwitr.exe</PackagePath>
-      <Modified>2016-07-25T16:29:57.393</Modified>
+      <Modified>2016-07-26T13:38:55.237</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
