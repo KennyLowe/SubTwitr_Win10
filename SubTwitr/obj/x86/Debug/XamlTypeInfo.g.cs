@@ -132,17 +132,19 @@ namespace SubTwitr.SubTwitr_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[4];
+            _typeNameTable = new string[5];
             _typeNameTable[0] = "SubTwitr.Options";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[3] = "SubTwitr.MainPage";
+            _typeNameTable[4] = "SubTwitr.Settings";
 
-            _typeTable = new global::System.Type[4];
+            _typeTable = new global::System.Type[5];
             _typeTable[0] = typeof(global::SubTwitr.Options);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[3] = typeof(global::SubTwitr.MainPage);
+            _typeTable[4] = typeof(global::SubTwitr.Settings);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -179,6 +181,7 @@ namespace SubTwitr.SubTwitr_XamlTypeInfo
 
         private object Activate_0_Options() { return new global::SubTwitr.Options(); }
         private object Activate_3_MainPage() { return new global::SubTwitr.MainPage(); }
+        private object Activate_4_Settings() { return new global::SubTwitr.Settings(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -208,6 +211,13 @@ namespace SubTwitr.SubTwitr_XamlTypeInfo
             case 3:   //  SubTwitr.MainPage
                 userType = new global::SubTwitr.SubTwitr_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_3_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  SubTwitr.Settings
+                userType = new global::SubTwitr.SubTwitr_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_4_Settings;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

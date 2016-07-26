@@ -97,5 +97,6 @@
       <RootProperty Name="Color" />
     </RootType>
     <RootType FullName="SubTwitr.MainPage" />
+    <RootType FullName="SubTwitr.Settings" />
   </Roots.RootTypes>
 </Roots>

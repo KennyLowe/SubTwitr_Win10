@@ -367,9 +367,9 @@ namespace SubTwitr
         }
 
 
-        private async void settings_Tapped(object sender, TappedRoutedEventArgs e)
+        private void settings_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            
+            this.Frame.Navigate(typeof(Settings), null);
         }
 
         private void refreshButton_Tapped(object sender, TappedRoutedEventArgs e)
