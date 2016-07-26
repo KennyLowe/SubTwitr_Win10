@@ -223,17 +223,29 @@ namespace SubTwitr
             PickFile.BorderBrush= new Windows.UI.Xaml.Media.SolidColorBrush(Windows.UI.Color.FromArgb(0, 0, 0, 0));
             
 
-
             file = await openPicker.PickSingleFileAsync();
+
+ 
             if (file != null)
             {
                 // Application now has read/write access to the picked file
                 OutputTextBlock.Text = "File Selected: " + file.Name;
                 var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
                 mediaElement.SetSource(stream, file.ContentType);
-                playPause.Text = "Tap to Play";
-                playPauseBorder.Visibility = Visibility.Visible;
-                playPause.Visibility = Visibility.Visible;
+                if (mediaElement.NaturalDuration.HasTimeSpan)
+                {
+                    if (mediaElement.NaturalDuration.TimeSpan.TotalSeconds > 30)
+                    {
+                        OutputTextBlock.Text = "File is too long. 30 seconds max.";
+                        mediaElement.Source = null;
+                    }
+                    else
+                    {
+                        playPause.Text = "Tap to Play";
+                        playPauseBorder.Visibility = Visibility.Visible;
+                        playPause.Visibility = Visibility.Visible;
+                    }
+                }
             }
             else
             {
