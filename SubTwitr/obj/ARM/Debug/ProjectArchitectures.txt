@@ -1,1 +1,0 @@
-C:\git\SubTwitr\SubTwitr\SubTwitr.csproj;arm

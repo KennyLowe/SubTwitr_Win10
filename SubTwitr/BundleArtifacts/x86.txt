@@ -1,2 +1,0 @@
-MainPackage=C:\Users\kenny\OneDrive\documents\visual studio 2015\Projects\SubTwitr\SubTwitr\bin\x86\Debug\SubTwitr_1.0.1.0_x86_Debug.appx
-SymbolPackage=C:\Users\kenny\OneDrive\documents\visual studio 2015\Projects\SubTwitr\SubTwitr\AppPackages\SubTwitr_1.0.1.0_Debug_Test\SubTwitr_1.0.1.0_x86_Debug.appxsym

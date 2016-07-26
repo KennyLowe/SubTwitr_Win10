@@ -1,9 +1,0 @@
-﻿[ResourceMetadata]
-"ResourceId"			"filemap.language-ru"
-"ResourceDimensions"		"language-ru"
-
-[Files]
-"C:\git\SubTwitr\SubTwitr\obj\ARM\Debug\filemap.language-ru.pri"			"resources.pri"
-"C:\git\SubTwitr\SubTwitr\obj\ARM\Debug\PackageLayout\ru\System.Spatial.resources.dll"			"ru\System.Spatial.resources.dll"
-"C:\git\SubTwitr\SubTwitr\obj\ARM\Debug\PackageLayout\ru\Microsoft.Data.OData.resources.dll"			"ru\Microsoft.Data.OData.resources.dll"
-"C:\git\SubTwitr\SubTwitr\obj\ARM\Debug\PackageLayout\ru\Microsoft.Data.Edm.resources.dll"			"ru\Microsoft.Data.Edm.resources.dll"
