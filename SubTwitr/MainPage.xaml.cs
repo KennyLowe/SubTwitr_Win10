@@ -171,14 +171,22 @@ namespace SubTwitr
                 var oauthUsername = uniAuth.CredentialStore.ScreenName;
                 var oauthID = uniAuth.CredentialStore.UserID;
 
-                string oauthTokenStr = oauthToken.ToString();
-                string oAuthSecretStr = oauthSecret.ToString();
-                string oAuthUsernameStr = oauthUsername.ToString();
-                string oAuthIDStr = oauthID.ToString();
+                string oauthTokenStr = null;
+                string oAuthSecretStr = null;
+                string oAuthUsernameStr = null;
+                string oAuthIDStr = null;
 
-                Windows.Storage.StorageFile createFile = await storageFolder.CreateFileAsync(@"secrets.txt", Windows.Storage.CreationCollisionOption.ReplaceExisting);
+                if (oauthSecret.ToString() != null)
+                {
+                    oauthTokenStr = oauthToken.ToString();
+                    oAuthSecretStr = oauthSecret.ToString();
+                    oAuthUsernameStr = oauthUsername.ToString();
+                    oAuthIDStr = oauthID.ToString();
+                }
 
-                await Windows.Storage.FileIO.WriteTextAsync(createFile, oauthTokenStr + " " + oAuthSecretStr + " " + oAuthUsernameStr + " " + oAuthIDStr);
+                else { OutputTextBlock.Text = "Operation Cancelled."; return; }
+
+                await Windows.Storage.FileIO.WriteTextAsync(secretsFile, oauthTokenStr + " " + oAuthSecretStr + " " + oAuthUsernameStr + " " + oAuthIDStr);
 
                 var credentials = uniAuth.CredentialStore;
                 userName.Text = credentials.ScreenName;
