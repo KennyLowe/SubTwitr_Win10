@@ -131,8 +131,8 @@ namespace SubTwitr
                 {
                     CredentialStore = new SingleUserInMemoryCredentialStore
                     {
-                        ConsumerKey = "oG9yeSPTSRk6SrXvJdYzebTbq",
-                        ConsumerSecret = "TpJH0SJeL3ruoQ7C9vWrLUP7X6ZxgdXlBQERxp3MNuT5xaHF9v",
+                        ConsumerKey = "",
+                        ConsumerSecret = "",
                         AccessToken = oauthToken,
                         AccessTokenSecret = oAuthTokenSecret,
                         ScreenName = oAuthUsername,
@@ -157,8 +157,8 @@ namespace SubTwitr
                 {
                     CredentialStore = new InMemoryCredentialStore
                     {
-                        ConsumerKey = "oG9yeSPTSRk6SrXvJdYzebTbq",
-                        ConsumerSecret = "TpJH0SJeL3ruoQ7C9vWrLUP7X6ZxgdXlBQERxp3MNuT5xaHF9v"
+                        ConsumerKey = "",
+                        ConsumerSecret = ""
                     },
                     Callback = "http://www.subtwitr.com"
                 };
